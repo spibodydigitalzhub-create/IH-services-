@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for Loan</title>
+  <link rel="stylesheet" href="service.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">IH Lending</div>
+    <nav class="nav">
+      <a href="lending.html">Lending Home</a>
+      <a href="loan-apply.html">Apply</a>
+      <a href="loan-status.html">Status</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Loan Application</p>
+    <h1>Submit your loan request</h1>
+    <p class="hero-text">Fill in your details and choose your preferred loan package.</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Application Form</h2>
+      <p>Enter accurate information for faster review.</p>
+    </div>
+
+    <form class="booking-form" id="loanForm">
+      <div class="form-group">
+        <label for="loanPlan">Loan Plan</label>
+        <select id="loanPlan" required>
+          <option value="">Select plan</option>
+          <option value="Starter Loan">Starter Loan</option>
+          <option value="Business Loan">Business Loan</option>
+          <option value="Property Support">Property Support</option>
+          <option value="Quick Approval">Quick Approval</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="loanName">Full Name</label>
+        <input type="text" id="loanName" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="loanPhone">Phone Number</label>
+        <input type="text" id="loanPhone" placeholder="Enter phone number" required />
+      </div>
+
+      <div class="form-group">
+        <label for="loanAmount">Loan Amount</label>
+        <input type="text" id="loanAmount" placeholder="Enter amount needed" required />
+      </div>
+
+      <div class="form-group">
+        <label for="loanDuration">Repayment Duration</label>
+        <input type="text" id="loanDuration" placeholder="e.g. 3 months" required />
+      </div>
+
+      <div class="form-group">
+        <label for="loanReason">Purpose of Loan</label>
+        <textarea id="loanReason" rows="4" placeholder="Why do you need this loan?" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit Application</button>
+    </form>
+
+    <p id="loanSuccessMessage" class="success-message"></p>
+  </section>
+
+  <script src="service.js"></script>
+</body>
+</html>
