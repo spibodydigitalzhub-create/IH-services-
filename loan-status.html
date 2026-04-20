@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Status</title>
+  <link rel="stylesheet" href="service.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">IH Lending</div>
+    <nav class="nav">
+      <a href="lending.html">Lending Home</a>
+      <a href="loan-apply.html">Apply</a>
+      <a href="loan-status.html">Status</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Loan Tracking</p>
+    <h1>Track your application</h1>
+    <p class="hero-text">Check the current stage of your loan request.</p>
+  </section>
+
+  <section class="section">
+    <div class="tracking-box">
+      <h3>Loan Status: <span id="loanStatus">Under Review</span></h3>
+      <p id="loanMessage">Your application has been received and is being reviewed.</p>
+    </div>
+
+    <div class="progress-bar">
+      <div id="loanProgress" style="width:35%;"></div>
+    </div>
+
+    <button onclick="updateLoanStatus()" class="btn btn-primary">
+      Simulate Loan Update
+    </button>
+    <a href="payment.html" class="btn btn-primary">Proceed to Payment</a>
+  </section>
+
+  <script src="service.js"></script>
+</body>
+</html>

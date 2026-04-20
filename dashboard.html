@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="service.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">IH Hub</div>
+  <nav class="nav">
+    <a href="app2-home.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="../marketplace/index.html">Marketplace</a>
+    <button onclick="logout()" class="btn btn-outline small-btn">Logout</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1 id="welcomeText">Welcome</h1>
+  <p class="hero-text">Manage your services and loans</p>
+</section>
+<section class="section">
+
+  <div class="section-head">
+    <h2>Quick Actions</h2>
+  </div>
+
+  <div class="service-grid">
+    <a href="booking.html?service=ride" class="service-card">
+      🚗 <h3>Book Ride</h3>
+    </a>
+
+    <a href="booking.html?service=delivery" class="service-card">
+      📦 <h3>Request Delivery</h3>
+    </a>
+
+    <a href="loan-apply.html" class="service-card">
+      💵 <h3>Apply for Loan</h3>
+    </a>
+
+    <a href="tracking.html" class="service-card">
+      📍 <h3>Track Request</h3>
+    </a>
+  </div>
+  <a href="booking.html?service=ride" class="service-card">🚗 Book Ride</a>
+
+<a href="loan-apply.html" class="service-card">💵 Apply Loan</a>
+
+<a href="wallet.html" class="service-card">💰 Wallet</a>
+
+<a href="notifications.html" class="service-card">🔔 Notifications</a>
+
+</section>
+
+<section class="section">
+
+  <div class="section-head">
+    <h2>Recent Activity</h2>
+  </div>
+
+  <div class="tracking-box">
+    <p>🚗 Ride request - Pending</p>
+    <p>📦 Delivery - Completed</p>
+    <p>💵 Loan - Under Review</p>
+  </div>
+
+  <a href="payment.html" class="btn btn-primary small-btn">Proceed to Payment</a>
+<a href="wallet.html" class="service-card">
+  💰 <h3>Wallet</h3>
+</a>
+</section>
+
+</body>
+</html>

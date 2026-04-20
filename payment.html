@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="service.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">IH Hub</div>
+    <nav class="nav">
+      <a href="app2-home.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="payment.html">Payment</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Secure Payment</p>
+    <h1>Complete your payment</h1>
+    <p class="hero-text">Pay for rides, deliveries, and loan repayments from one clean payment screen.</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Payment Summary</h2>
+      <p>Review the payment details before proceeding.</p>
+    </div>
+
+    <div class="payment-card">
+      <div class="payment-row">
+        <span>Service</span>
+        <strong id="paymentService">Ride Booking</strong>
+      </div>
+
+      <div class="payment-row">
+        <span>Reference</span>
+        <strong>#IH2026-001</strong>
+      </div>
+
+      <div class="payment-row">
+        <span>Amount</span>
+        <strong id="paymentAmount">$25.00</strong>
+      </div>
+
+      <div class="payment-row total-row">
+        <span>Total</span>
+        <strong id="paymentTotal">$25.00</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Select Payment Method</h2>
+      <p>Choose your preferred payment option.</p>
+    </div>
+
+    <div class="payment-methods">
+      <label class="method-card">
+        <input type="radio" name="paymentMethod" value="Card Payment" checked />
+        <span>💳 Card Payment</span>
+      </label>
+
+      <label class="method-card">
+        <input type="radio" name="paymentMethod" value="Mobile Money" />
+        <span>📱 Mobile Money</span>
+      </label>
+
+      <label class="method-card">
+        <input type="radio" name="paymentMethod" value="Wallet Balance" />
+        <span>👛 Wallet Balance</span>
+      </label>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Payment Details</h2>
+      <p>Enter your payment information below.</p>
+    </div>
+
+    <form class="booking-form" id="paymentForm">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="cardNumber">Card / Account Number</label>
+        <input type="text" id="cardNumber" placeholder="Enter number" required />
+      </div>
+
+      <div class="form-group">
+        <label for="expiryDate">Expiry / Validity</label>
+        <input type="text" id="expiryDate" placeholder="MM/YY" required />
+      </div>
+
+      <div class="form-group">
+        <label for="securityCode">Security Code / PIN</label>
+        <input type="text" id="securityCode" placeholder="***" required />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Pay Now</button>
+    </form>
+
+    <p id="paymentSuccess" class="success-message"></p>
+  </section>
+
+  <script src="service.js"></script>
+</body>
+</html>

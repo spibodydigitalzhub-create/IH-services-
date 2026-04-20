@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Request</title>
+  <link rel="stylesheet" href="service.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">IH Services</div>
+</header>
+
+<section class="hero">
+  <h1>Tracking Your Request</h1>
+  <p class="hero-text">Your request is being processed</p>
+</section>
+
+<section class="section">
+
+  <div class="tracking-box">
+    <h3>Status: <span id="status">Pending...</span></h3>
+    <p id="message">Looking for available driver...</p>
+  </div>
+  <div class="driver-card" id="driverCard" style="display:none;">
+  <h3>Driver Assigned</h3>
+  <p><strong>Name:</strong> John Doe</p>
+  <p><strong>Car:</strong> Toyota Vitz</p>
+  <p><strong>Plate:</strong> KDA 123A</p>
+
+  <a href="tel:+254700000000" class="btn btn-outline small-btn">
+    Call Driver
+  </a>
+</div>
+
+  <div class="progress-bar">
+    <div id="progress"></div>
+  </div>
+
+  <button onclick="updateStatus()" class="btn btn-primary">
+    Simulate Update
+  </button>
+  <a href="payment.html" class="btn btn-primary">Proceed to Payment</a>
+
+</section>
+<script>
+function updateStatus() {
+  document.getElementById("status").innerText = "Driver Assigned 🚗";
+}
+</script>
+
+</body>
+</html>
